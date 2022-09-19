@@ -103,7 +103,7 @@ If type `Person` references `Address` and the `Address` structure was already de
  * reuse another definition for a specific field
  * define a custom JSON field name and reuse another definition for a specific field
 
- Please refer to the JavaDoc or see [here](/src/main/java/com/remondis/cdc/consumer/pactbuilder/FieldBuilder.java)
+ Please refer to the JavaDoc or see [here](/com/patriciadrive/cdc/consumer/pactbuilder/FieldBuilder.java)
 
 ## Top-level collections
 
