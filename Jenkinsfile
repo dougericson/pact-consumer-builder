@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'mvn -Dmaven.test.failure.ignore=true build'
+		sh 'mvn -Dmaven.test.failure.ignore=true compile'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing....'
+		sh 'mvn test'
             }
         }
     }
