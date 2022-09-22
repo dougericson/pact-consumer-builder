@@ -8,10 +8,10 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
-            	ssh ```
+            	ssh '''
 			echo "PATH = ${PATH}"
 			echo "M2_HOME = ${M2_HOME}"
-		```
+		'''
             }
         }
         stage('Build') {
