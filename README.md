@@ -103,7 +103,7 @@ If type `Person` references `Address` and the `Address` structure was already de
  * reuse another definition for a specific field
  * define a custom JSON field name and reuse another definition for a specific field
 
- Please refer to the JavaDoc or see [here](/src/main/java/com/remondis/cdc/consumer/pactbuilder/FieldBuilder.java)
+ Please refer to the JavaDoc or see [here](/com/github/dougericson/pact/consumer/pactbuilder/FieldBuilder.java)
 
 ## Top-level collections
 
@@ -121,7 +121,7 @@ For a complete example please refer to [this example](src/test/java/com/remondis
 
 The PACT Dsl provides a way to define root values. Root values are values that can be represented by a simple string. When defining arrays using the PACT Dsl, root values must be declared using `au.com.dius.pact.consumer.dsl.PactDslJsonRootValue` instead of using the methods that are used for fields within complex objects.
 
-To support root values, this library provides a second interface `com.remondis.cdc.consumer.pactbuilder.PactDslRootValueModifier<T>`. This interface provides the known methods of `PactDslModifier` but also contains a mandatory method to return the specific `PactDslJsonRootValue`.
+To support root values, this library provides a second interface `PactDslRootValueModifier<T>`. This interface provides the known methods of `PactDslModifier` but also contains a mandatory method to return the specific `PactDslJsonRootValue`.
 
 If you define data types, that should be rendered as simple strings, always use `PactDslRootValueModifier` when declaring a custom modifier.
 
@@ -164,7 +164,7 @@ The following example shows how to build a pact consumer body for a `Page` using
   }
 ```
 
-The class `com.remondis.cdc.consumer.pactbuilder.external.springsupport.SpringSortModifier` provides a custom JSON body definition for the class `org.springframework.data.domain.Sort`. If you use this custom definition a sort structure will be defined in the resulting pact, but **it uses sample data**. So the sort values of your `PageBean` object will not be reflected in the resulting pact.
+The class `SpringSortModifier` provides a custom JSON body definition for the class `org.springframework.data.domain.Sort`. If you use this custom definition a sort structure will be defined in the resulting pact, but **it uses sample data**. So the sort values of your `PageBean` object will not be reflected in the resulting pact.
 
 
 # How to contribute

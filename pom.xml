@@ -3,15 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.remondis.cdc</groupId>
+    <groupId>com.github.dougericson.pact.consumer.pactbuilder</groupId>
     <artifactId>pact-consumer-builder</artifactId>
     <version>0.1.6</version>
     <description>A builder that generates JSON expectations for PACT consumer tests.</description>
-    <url>https://github.com/remondis-it/pact-consumer-builder</url>
+    <url>https://github.com/dougericson/pact-consumer-builder</url>
     <scm>
-        <connection>scm:git:https://github.com/remondis-it/pact-consumer-builder.git</connection>
-        <developerConnection>scm:git:git@github.com:remondis-it/pact-consumer-builder.git</developerConnection>
-        <url>https://github.com/remondis-it/pact-consumer-builder</url>
+        <connection>scm:git:https://github.com/dougericson/pact-consumer-builder.git</connection>
+        <developerConnection>scm:git:git@github.com:dougericson/pact-consumer-builder.git</developerConnection>
+        <url>https://github.com/dougericson/pact-consumer-builder</url>
     </scm>
     <licenses>
         <license>
@@ -21,14 +21,14 @@
     </licenses>
     <developers>
         <developer>
-            <id>schuettec</id>
-            <name>Christopher Schütte</name>
-            <email>christopher.schuette@remondis.de</email>
+            <id>dougericson</id>
+            <name>Doug Ericson</name>
+            <email>pact-consumer-builder@dougericson.com</email>
             <roles>
                 <role>developer</role>
             </roles>
-            <timezone>+2</timezone>
-            <url>N/A</url>
+            <timezone>-4</timezone>
+            <url>https://github.com/dougericson</url>
         </developer>
     </developers>
     <properties>
@@ -38,8 +38,8 @@
     </properties>
     <distributionManagement>
         <repository>
-            <id>bintray-schuettec-maven</id>
-            <name>schuettec-maven</name>
+            <id>jenkins-patriciadrive-maven</id>
+            <name>patriciadrive-maven</name>
             <url>https://api.bintray.com/maven/schuettec/maven/com.remondis.cdc.consumer.pactbuilder/;publish=1</url>
         </repository>
     </distributionManagement>
